@@ -1,21 +1,6 @@
 @media screen and (max-width: 767px) {
    
-        .logotype {
-            color: var(--logo-blue);
-            font-family: 'Raleway', sans-serif;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            
-        }
-    
-    
-        .logotype-black {
-            color: var(--text-color);
-        }
+        
 
      
         .menu {
@@ -166,7 +151,7 @@
 
 }
 
-
+/*===================================tablet==========================*/
    
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
@@ -177,7 +162,7 @@
         .mobile-menu-open-button {
             display: none;
         }
-}
+
 
 
 
@@ -230,27 +215,62 @@
 }
 
 .menu {
+    margin-left: 120px;
     display: flex;
     gap: 40px;
 }
+
+
+
+
+
 
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 74px;
 }
 
 .contacts-list {
     display: flex;
-    gap: 40px;
+    justify-content: flex-end;
+   
+    flex-direction: column;
+    gap: 12px;
 
 }
 
 
 .page-header {
+   
     border-bottom: 1px solid var(--header-underline);
-    padding: 24px 0;
+
+
 }
-*/
+
+.current {
+    position: relative;
+    color: var(--hover-color);
 
 
 
+}
+
+.current::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+}
+
+}
+
+@media screen and (min-width: 1158px) {
+    
+}
