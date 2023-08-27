@@ -271,6 +271,136 @@
 
 }
 
+/*=================================desktop=============================*/
+
 @media screen and (min-width: 1158px) {
+
+.mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-open-button {
+        display: none;
+    }
+
+    .page-header {
+            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+        }
     
+        .logotype {
+            color: var(--logo-blue);
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-right: 76px;
+        }
+    
+    
+        .logotype-black {
+            color: var(--text-color);
+        }
+    
+    
+    
+    
+        .menu-item-link {
+            color: var(--text-color);
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            padding: 24px 0;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+    
+    
+    
+        }
+    
+        .menu-item-link:hover,
+        .menu-item-link:focus {
+            color: var(--hover-color);
+        }
+    
+        .header-contacts {
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--body-color);
+            text-decoration: none;
+        }
+    
+        .header-contacts:hover,
+        .header-contacts:focus {
+            color: var(--hover-color);
+        }
+    
+    
+        .contacts-list-item {
+            color: var(--body-color);
+            font-style: normal;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .contacts-list-item:hover,
+        .contacts-list-item:focus {
+            color: var(--hover-color);
+        }
+    
+    
+    
+        
+        .current {
+            position: relative;
+            color: var(--hover-color);
+    
+    
+    
+        }
+    
+        .current::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--hover-color);
+        }
+.page-nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+
+}
+
+
+.page-header {
+    border-bottom: 1px solid var(--header-underline);
+    padding: 24px 0;
+}
+
+.page-nav {
+    align-items: center;
+}
 }
